@@ -153,6 +153,7 @@ button {
   padding: 50px;
   display: flex;
   justify-content: space-between;
+  gap: 100px;
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -189,4 +190,14 @@ button {
   .card {
     flex-direction: column;
   }
+}
+@media only screen and (max-width: 1024px) {
+  
+  .card {
+    text-align: center;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 10px
+  }
+
 }
