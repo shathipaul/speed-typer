@@ -150,9 +150,9 @@ button {
 
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .card {
@@ -160,8 +160,9 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
-  justify-content: space-between;
-  gap: 100px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -201,11 +202,8 @@ button {
 }
 @media only screen and (max-width: 1024px) {
   
-  .card {
-    text-align: center;
-    flex-direction: column;
-    justify-content: unset;
-    gap: 10px
+  #histories {
+    grid-template-columns: 1fr;
   }
 
 }
